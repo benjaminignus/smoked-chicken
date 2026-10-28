@@ -1,0 +1,1664 @@
+<!DOCTYPE html>
+<html class="dark scroll-smooth" lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>SMOKED CHICKEN | Pollo al Ast Ahumado a Leña & Especialidades Polacas</title>
+  <meta name="description" content="Obrador gastronómico takeaway en Madrid especializado en pollo al ast ahumado a fuego lento con leña de roble y haya, marinado 24h y especialidades tradicionales polacas: Pierogi caseros, Bigos del cazador y Mizeria."/>
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300..900;1,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface": "#151312",
+            "surface-dim": "#12100f",
+            "surface-bright": "#3b3937",
+            "surface-container-lowest": "#0d0b0a",
+            "surface-container-low": "#1a1817",
+            "surface-container": "#211f1e",
+            "surface-container-high": "#2b2827",
+            "surface-container-highest": "#363332",
+            "on-surface": "#e7e1df",
+            "on-surface-variant": "#d4b8ae",
+            "outline": "#8a7068",
+            "outline-variant": "#4a352e",
+            "primary": "#ffb599",
+            "primary-container": "#f06627",
+            "primary-dark": "#c24912",
+            "on-primary": "#5a1c00",
+            "on-primary-container": "#ffffff",
+            "secondary": "#f2be71",
+            "secondary-container": "#523700",
+            "on-secondary": "#442b00",
+            "on-secondary-container": "#ffdda9",
+            "tertiary": "#cec5c0",
+          },
+          fontFamily: {
+            serif: ["Playfair Display", "Georgia", "serif"],
+            sans: ["Hanken Grotesk", "system-ui", "-apple-system", "sans-serif"],
+          },
+          boxShadow: {
+            'glow-primary': '0 0 32px rgba(240, 102, 39, 0.35)',
+            'glow-gold': '0 0 24px rgba(242, 190, 113, 0.25)',
+            'deep-card': '0 20px 40px -15px rgba(0, 0, 0, 0.85)',
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    @layer base {
+      html, body {
+        margin: 0;
+        padding: 0;
+        background-color: #151312;
+        color: #e7e1df;
+      }
+    }
+    .text-balance {
+      text-wrap: balance;
+    }
+    /* Estilo sutil de scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #12100f;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #2b2827;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #f06627;
+    }
+  </style>
+</head>
+
+<body class="bg-surface text-on-surface font-sans min-h-screen selection:bg-primary-container selection:text-white antialiased">
+
+  <!-- ========================================================================= -->
+  <!-- 1. HEADER / NAVBAR DE PRECISIÓN                                          -->
+  <!-- ========================================================================= -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl border-b border-surface-container-high/60 shadow-[0_16px_40px_-8px_rgba(0,0,0,0.8)] transition-all">
+    <div class="max-w-7xl mx-auto h-20 px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
+      
+      <!-- Brand Logo & Identity -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-lg bg-surface-container-high border border-primary-container/40 flex items-center justify-center text-primary-container shadow-[0_0_15px_rgba(240,102,39,0.25)] group-hover:scale-105 transition-transform">
+          <span class="material-symbols-outlined text-[26px]">local_fire_department</span>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-serif text-xl sm:text-2xl font-bold tracking-tight text-on-surface leading-none group-hover:text-primary transition-colors">
+            SMOKED <span class="text-primary-container">CHICKEN</span>
+          </span>
+          <span class="text-[10px] uppercase tracking-[0.2em] text-secondary font-semibold mt-1">
+            Pollo al Ast Ahumado & Kuchnia Polska
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden lg:flex items-center gap-7">
+        <a href="#carta-brasa" class="text-xs uppercase tracking-wider text-on-surface-variant hover:text-secondary transition-colors font-medium">La Carta de Brasa</a>
+        <a href="#comida-polaca" class="text-xs uppercase tracking-wider text-on-surface-variant hover:text-secondary transition-colors font-medium">Especialidades Polacas</a>
+        <a href="#monitor-asado" class="text-xs uppercase tracking-wider text-on-surface-variant hover:text-secondary transition-colors font-medium">Estado del Obrador</a>
+        <a href="#como-funciona" class="text-xs uppercase tracking-wider text-on-surface-variant hover:text-secondary transition-colors font-medium">Cómo Pedir</a>
+        <a href="#nuestra-historia" class="text-xs uppercase tracking-wider text-on-surface-variant hover:text-secondary transition-colors font-medium">Tradición</a>
+      </nav>
+
+      <!-- Right CTAs & Live Oven Alert -->
+      <div class="flex items-center gap-3">
+        <div class="hidden md:flex items-center gap-2 bg-surface-container-low px-3.5 py-1.5 rounded-full border border-surface-container-high">
+          <span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span>
+          <span class="text-[11px] uppercase tracking-wider text-secondary font-semibold">Tanda Caliente:</span>
+          <span class="text-xs text-on-surface font-semibold" id="header-tanda-badge">13:45 h (7 libres)</span>
+        </div>
+
+        <a href="#hacer-pedido" class="inline-flex items-center gap-2 bg-primary-container hover:bg-primary text-white hover:text-on-primary font-semibold text-xs sm:text-sm uppercase tracking-wider px-4 sm:px-5 py-2.5 rounded-lg transition-all duration-200 shadow-glow-primary hover:shadow-none hover:translate-y-[1px]">
+          <span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+          <span>Pedir para Llevar</span>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="w-full pt-20">
+
+    <!-- ========================================================================= -->
+    <!-- 2. HERO SECTION: COPY PERSUASIVO SENSORIAL + PRODUCTO ESTRELLA           -->
+    <!-- ========================================================================= -->
+    <section class="relative w-full overflow-hidden bg-surface-container-lowest pt-10 pb-20 lg:pt-16 lg:pb-28">
+      
+      <!-- Ambient Fire Glows -->
+      <div class="absolute top-10 -left-40 w-96 h-96 rounded-full bg-primary-container/15 blur-[130px] pointer-events-none"></div>
+      <div class="absolute bottom-10 right-0 w-[32rem] h-[32rem] rounded-full bg-secondary/10 blur-[160px] pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+          
+          <!-- Left Column: High-Conversion Copy -->
+          <div class="lg:col-span-7 flex flex-col gap-6">
+            
+            <!-- Eyebrow Badge -->
+            <div class="inline-flex items-center gap-2.5 self-start px-3.5 py-1.5 rounded-full bg-surface-container-high border border-outline-variant/60 text-secondary">
+              <span class="relative flex h-2 w-2">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-primary-container"></span>
+              </span>
+              <span class="text-[11px] uppercase tracking-[0.16em] font-semibold text-secondary">
+                Obrador Takeaway Gourmet • Pollos al Ast Ahumados
+              </span>
+            </div>
+
+            <!-- Main Headline -->
+            <h1 class="font-serif text-3xl sm:text-5xl lg:text-[3.5rem] leading-[1.12] text-on-surface font-bold tracking-tight text-balance">
+              El Arte del <span class="italic font-normal text-secondary">Fuego Lento</span> & el Pollo al Ast Ahumado.
+            </h1>
+
+            <!-- Subheading / Value Proposition -->
+            <p class="text-base sm:text-lg text-on-surface-variant max-w-2xl leading-relaxed">
+              Pollo campero de origen certificado, macerado 24 horas en salmuera de hierbas de los Cárpatos y ahumado lentamente con leña de roble y haya. Piel dorada ultra crujiente, carne que se deshace y el auténtico confort de la cocina tradicional polaca.
+            </p>
+
+            <!-- Friction Eliminators & CTA Buttons -->
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+              <a href="#hacer-pedido" class="inline-flex items-center justify-center gap-2.5 bg-primary-container hover:bg-primary text-white hover:text-on-primary font-bold text-sm uppercase tracking-wider px-7 py-4 rounded-lg transition-all duration-200 shadow-glow-primary hover:shadow-none hover:translate-y-0.5">
+                <span class="material-symbols-outlined text-[22px]">local_fire_department</span>
+                <span>Pedir para Recoger Hoy</span>
+              </a>
+
+              <a href="#carta-brasa" class="inline-flex items-center justify-center gap-2 bg-surface-container-high hover:bg-surface-bright text-secondary font-semibold text-sm uppercase tracking-wider px-6 py-4 rounded-lg border border-surface-container-highest transition-colors">
+                <span>Explorar la Carta</span>
+                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+              </a>
+            </div>
+
+            <!-- Micro-Urgency & Freshness Indicator -->
+            <div class="pt-2 flex flex-wrap items-center gap-3 text-xs text-on-surface-variant">
+              <div class="flex items-center gap-2 bg-surface-container-low px-3 py-1.5 rounded-md border border-surface-container-high">
+                <span class="material-symbols-outlined text-secondary text-[16px]">schedule</span>
+                <span class="text-on-surface font-medium">Próxima Tanda: <strong class="text-secondary">13:45 h</strong></span>
+              </div>
+              <span class="text-outline">•</span>
+              <span class="text-secondary font-medium">Quedan solo 7 piezas para el turno de mediodía</span>
+              <span class="text-outline">•</span>
+              <span class="text-on-surface-variant">Sin colas: tu caja sale caliente a la hora fijada</span>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Visual Product Showcase Hero Card -->
+          <div class="lg:col-span-5 relative">
+            <div class="relative rounded-2xl overflow-hidden border border-surface-container-high bg-surface-container shadow-deep-card group">
+              
+              <!-- Featured Dish Image -->
+              <div class="relative h-[420px] sm:h-[480px] overflow-hidden">
+                <img 
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBp8z6Jtem40d66LzUvVPDS3WHTbqXYdaDpmbF5fg1zzwXvMBn7_xjIIwVsB-_iwOhaZItFn8GPKdwsvPyya0SyJKjZYyjS5Ucrq8k_7rPj2T0AsYQpqIR1YJ8LyBR84qaPMBp4x1vxWx_Dnq_jFgi50yu4AHAGuWo0xpy6J_R5peAZdnr8NNM_BtWj_j_xKiK58yOqFDHa3fwG-FUXqIQpW9jpusYw6aDTZb4S3_8D" 
+                  alt="Pollo al ast ahumado tradicional SMOKED CHICKEN servido con leña y guarnición" 
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/30 to-transparent"></div>
+              </div>
+
+              <!-- Floating Badges over Dish -->
+              <div class="absolute top-4 left-4 flex flex-col gap-2">
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-surface-container-lowest/90 backdrop-blur-md text-secondary text-[11px] font-bold tracking-wider uppercase border border-secondary/20">
+                  <span class="material-symbols-outlined text-[15px]">verified</span> 100% Granja Selección
+                </span>
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-primary-container text-white text-[11px] font-bold tracking-wider uppercase shadow-md">
+                  <span class="material-symbols-outlined text-[15px]">timer</span> Horneadas cada 45 min
+                </span>
+              </div>
+
+              <!-- Card Bottom Details & Fast-Add Button -->
+              <div class="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-surface-container-low/95 backdrop-blur-md border border-surface-container-high flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                <div>
+                  <span class="text-[10px] text-secondary uppercase tracking-widest font-bold block">Especialidad de la Casa</span>
+                  <h2 class="font-serif text-lg font-bold text-on-surface">Pollo al Ast Ahumado Roble & Haya</h2>
+                  <p class="text-xs text-on-surface-variant">Hierbas de montaña, ajo asado y toque cítrico</p>
+                </div>
+                <div class="flex items-center sm:flex-col items-end justify-between sm:justify-center border-t sm:border-t-0 sm:border-l border-surface-container-high pt-2 sm:pt-0 sm:pl-4">
+                  <div class="text-right">
+                    <span class="font-serif text-2xl text-secondary font-bold">15,50 €</span>
+                    <span class="block text-[10px] text-on-surface-variant uppercase tracking-wider">Pieza entera</span>
+                  </div>
+                  <button onclick="quickAdd('Pollo al Ast Ahumado Roble & Haya', 15.50)" class="mt-1 text-[11px] font-bold text-primary-container hover:text-white uppercase tracking-wider inline-flex items-center gap-1 transition-colors">
+                    <span>+ Añadir al pedido</span>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Trust Pillars Ribbon (4 Pilares de Calidad) -->
+        <div class="mt-14 grid grid-cols-2 lg:grid-cols-4 gap-4 bg-surface-container-low border border-surface-container-high/80 rounded-xl p-5 shadow-lg">
+          
+          <div class="flex items-center gap-3.5 p-2">
+            <div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary-container border border-primary-container/20 shrink-0">
+              <span class="material-symbols-outlined text-[24px]">outdoor_grill</span>
+            </div>
+            <div>
+              <h3 class="text-xs uppercase tracking-wider text-on-surface font-bold">Leña de Roble & Haya</h3>
+              <p class="text-xs text-on-surface-variant">Ahumado natural sin aditivos químicos</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3.5 p-2">
+            <div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-secondary border border-secondary/20 shrink-0">
+              <span class="material-symbols-outlined text-[24px]">hourglass_top</span>
+            </div>
+            <div>
+              <h3 class="text-xs uppercase tracking-wider text-on-surface font-bold">Marinado 24 Horas</h3>
+              <p class="text-xs text-on-surface-variant">Salmuera con especias de los Cárpatos</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3.5 p-2">
+            <div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary-container border border-primary-container/20 shrink-0">
+              <span class="material-symbols-outlined text-[24px]">skillet</span>
+            </div>
+            <div>
+              <h3 class="text-xs uppercase tracking-wider text-on-surface font-bold">Kuchnia Polska</h3>
+              <p class="text-xs text-on-surface-variant">Pierogi caseros y recetas tradicionales</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3.5 p-2">
+            <div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-secondary border border-secondary/20 shrink-0">
+              <span class="material-symbols-outlined text-[24px]">verified</span>
+            </div>
+            <div>
+              <h3 class="text-xs uppercase tracking-wider text-on-surface font-bold">Pollos Camperos</h3>
+              <p class="text-xs text-on-surface-variant">Crianza libre, 100% natural y trazable</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================================= -->
+    <!-- 3. MONITOR DE ASADO EN VIVO (ESTADO DEL OBRADOR HOY)                       -->
+    <!-- ========================================================================= -->
+    <section id="monitor-asado" class="w-full bg-surface-container border-y border-surface-container-high py-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+          
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-secondary animate-ping"></span>
+              <span class="text-xs uppercase tracking-widest text-secondary font-bold">Monitor de Asado en Vivo</span>
+            </div>
+            <h2 class="font-serif text-xl sm:text-2xl font-bold text-on-surface mt-1">
+              Estado del Obrador & Horno Principal
+            </h2>
+            <p class="text-xs text-on-surface-variant">
+              Seguimiento artesanal para garantizar que cada ave se entrega crujiente y en su cénit de sabor.
+            </p>
+          </div>
+
+          <!-- Step Progression Bar -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 lg:gap-6 bg-surface-container-lowest p-3 rounded-xl border border-surface-container-high">
+            
+            <div class="p-2.5 rounded-lg bg-surface-container-high/40 border-l-2 border-primary-container">
+              <span class="text-[10px] uppercase text-outline tracking-wider font-semibold block">1. Marinado 24h</span>
+              <span class="text-xs font-bold text-on-surface flex items-center gap-1 mt-0.5">
+                <span class="material-symbols-outlined text-emerald-400 text-[14px]">check_circle</span>
+                Completado
+              </span>
+            </div>
+
+            <div class="p-2.5 rounded-lg bg-surface-container-high/40 border-l-2 border-primary-container">
+              <span class="text-[10px] uppercase text-outline tracking-wider font-semibold block">2. Ahumado Lento</span>
+              <span class="text-xs font-bold text-on-surface flex items-center gap-1 mt-0.5">
+                <span class="material-symbols-outlined text-emerald-400 text-[14px]">check_circle</span>
+                3h en Foso Roble
+              </span>
+            </div>
+
+            <div class="p-2.5 rounded-lg bg-primary-container/10 border-l-2 border-primary-container">
+              <span class="text-[10px] uppercase text-primary-container tracking-wider font-bold block">3. Dorado & Fuego</span>
+              <span class="text-xs font-bold text-secondary flex items-center gap-1 mt-0.5 animate-pulse">
+                <span class="material-symbols-outlined text-primary-container text-[14px]">local_fire_department</span>
+                En Horno Ahora
+              </span>
+            </div>
+
+            <div class="p-2.5 rounded-lg bg-surface-container-high/40 border-l-2 border-secondary">
+              <span class="text-[10px] uppercase text-secondary tracking-wider font-bold block">4. Tanda Despacho</span>
+              <span class="text-xs font-bold text-on-surface mt-0.5 block">
+                13:45 h (7 piezas)
+              </span>
+            </div>
+
+          </div>
+
+          <!-- Quick Reserve Button -->
+          <a href="#hacer-pedido" class="inline-flex items-center justify-center gap-2 bg-secondary/15 hover:bg-secondary text-secondary hover:text-on-secondary font-bold text-xs uppercase tracking-wider px-5 py-3 rounded-lg border border-secondary/40 transition-colors whitespace-nowrap">
+            <span>Asegurar Ración</span>
+            <span class="material-symbols-outlined text-[16px]">bolt</span>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================================= -->
+    <!-- 4. LA CARTA DE LA BRASA & ESPECIALIDADES POLACAS                          -->
+    <!-- ========================================================================= -->
+    <section id="carta-brasa" class="w-full py-20 bg-surface">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header & Category Filters -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-12 border-b border-surface-container-high">
+          <div>
+            <span class="text-xs uppercase tracking-widest text-secondary font-bold block mb-1">Cortes Principales & Tradición Centroeuropea</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-on-surface">La Carta del Asador</h2>
+            <p class="text-sm text-on-surface-variant max-w-xl mt-1">
+              Asados en espadín giratorio vertical con rotación pausada sobre brasas vivas. Piel crujiente, interior jugoso y aromático.
+            </p>
+          </div>
+
+          <!-- Filter Pills -->
+          <div class="flex flex-wrap gap-2 text-xs font-semibold uppercase tracking-wider">
+            <button onclick="filterMenu('all')" class="menu-filter-btn px-4 py-2 rounded-lg bg-primary-container text-white transition-all" data-category="all">Todos los Asados</button>
+            <button onclick="filterMenu('chicken')" class="menu-filter-btn px-4 py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-all" data-category="chicken">Pollos al Ast</button>
+            <button onclick="filterMenu('polish')" class="menu-filter-btn px-4 py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-all" data-category="polish">Platos Polacos</button>
+            <button onclick="filterMenu('sides')" class="menu-filter-btn px-4 py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-all" data-category="sides">Guarniciones & Salsas</button>
+          </div>
+        </div>
+
+        <!-- Menu Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12" id="menu-grid">
+          
+          <!-- Dish 1: Pollo al Ast Tradición Roble -->
+          <article class="menu-item bg-surface-container rounded-xl overflow-hidden border border-surface-container-high flex flex-col justify-between group hover:border-primary-container/50 transition-all duration-300" data-category="chicken">
+            <div>
+              <div class="relative h-60 overflow-hidden">
+                <img 
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBy0LCqhsJLSLRho9s7uoByaBY5hoXmM_x8sZBhlyVJU6gqIDKatK2CK9uoj2y0od5cbtSBcvaBi3Ft2RYwOVAijz72J_WGv6XoLiSfWl0JWWKU5fl8Ss8e48HGy4Tg63095yuzPvB5GMIHimx1XoacvMc7EQ1jwpNOOE3XskxWvrTZekMvQ2OTXDUqOJIVZaW5SqnhU3HI9YflLdhTFWViJ8iIOtU5b4JX-A7XCSD0" 
+                  alt="Pollo al Ast Tradición Roble y Haya" 
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <span class="absolute top-3 left-3 bg-surface-container-lowest/90 backdrop-blur-md text-secondary text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded border border-secondary/20">
+                  Receta Insignia 1982
+                </span>
+              </div>
+              <div class="p-6">
+                <div class="flex items-start justify-between gap-2 mb-2">
+                  <h3 class="font-serif text-xl font-bold text-on-surface">Pollo al Ast Ahumado Tradición</h3>
+                  <span class="font-serif text-xl font-bold text-secondary shrink-0">15,50 €</span>
+                </div>
+                <p class="text-xs text-on-surface-variant leading-relaxed mb-4">
+                  Ahumado lento con romero silvestre, tomillo limonero, pimienta de Sichuan y sal marina. Glaseado continuo en su propio jugo desgrasado.
+                </p>
+                <div class="flex flex-wrap gap-1.5 text-[10px] uppercase font-semibold text-outline">
+                  <span class="px-2 py-0.5 rounded bg-surface-container-high">Aves de pasto</span>
+                  <span class="px-2 py-0.5 rounded bg-surface-container-high">Sin gluten</span>
+                  <span class="px-2 py-0.5 rounded bg-surface-container-high">Piel crujiente</span>
+                </div>
+              </div>
+            </div>
+            <div class="p-6 pt-0">
+              <button onclick="quickAdd('Pollo al Ast Ahumado Tradición', 15.50)" class="w-full py-3 rounded-lg bg-surface-container-high hover:bg-primary-container hover:text-white text-secondary font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-all">
+                <span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+                <span>Añadir al Pedido</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Dish 2: Pollo Glaseado con Miel & Mostaza Polaca -->
+          <article class="menu-item bg-surface-container rounded-xl overflow-hidden border border-surface-container-high flex flex-col justify-between group hover:border-primary-container/50 transition-all duration-300" data-category="chicken">
+            <div>
+              <div class="relative h-60 overflow-hidden">
+                <img 
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsksRIZ85e_ZmWj6AcWSWiSJF98sT5MWd05SBzSsz7u6yUy-s3U-xpgju3LyxjCtMXNeWvdW0bmUH8b7PkWZSCQjjRQTPPl_a9EB5dCrUC5GDu6wZDIi7v9i8QtPlaqt8CyN_o7oRyzw4FrM9yss4xrunIPMKg-WFKIlJmMVYTRhBCc3qXRgi7KCF2sry_Rf4AUHDFRVnvXvKjA5MhScNvNaBsVkpgqPyEQf_LX80m" 
+                  alt="Pollo Glaseado Miel y Mostaza Polaca" 
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <span class="absolute top-3 left-3 bg-primary-container text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded">
+                  Especialidad Gourmet
+                </span>
+              </div>
+              <div class="p-6">
+                <div class="flex items-start justify-between gap-2 mb-2">
+                  <h3 class="font-serif text-xl font-bold text-on-surface">Pollo Miel & Mostaza Polaca</h3>
+                  <span class="font-serif text-xl font-bold text-secondary shrink-0">17,90 €</span>
+                </div>
+                <p class="text-xs text-on-surface-variant leading-relaxed mb-4">
+                  Receta <em>Miodowo-Musztardowy</em>: reducción de mostaza suave de Poznań, miel pura de bosque y toque de eneldo fresco. Caramelo crujiente exterior.
+                </p>
+                <div class="flex flex-wrap gap-1.5 text-[10px] uppercase font-semibold text-outline">
+                  <span class="px-2 py-0.5 rounded bg-surface-container-high">Mostaza Polaca</span>
+                  <span class="px-2 py-0.5 rounded bg-surface-container-high">Lote Limitado</span>
+                </div>
+              </div>
+            </div>
+            <div class="p-6 pt-0">
+              <button onclick="quickAdd('Pollo Miel & Mostaza Polaca', 17.90)" class="w-full py-3 rounded-lg bg-surface-container-high hover:bg-primary-container hover:text-white text-secondary font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-all">
+                <span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+                <span>Añadir al Pedido</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Dish 3: Costillar Ahumado al Humo de Roble -->
+          <article class="menu-item bg-surface-container rounded-xl overflow-hidden border border-surface-container-high flex flex-col justify-between group hover:border-primary-container/50 transition-all duration-300" data-category="chicken">
+            <div>
+              <div class="relative h-60 overflow-hidden">
+                <img 
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9dgBdZQEE0A4azT1TePCtTh94jONTk23a0TzY1gxm_-cC769J7vF_6HpdmbuyIpoeJxJoctKdf3xt5HqoanmfbStagfdW20a7E8k77ufqlvd4UQspAf7Tfl41zgHS_dagUXLYzIYNQjtyx4pzJqR-FJOad_OJCwVhNatW3NsvBsiYhTYkrsxohTKbR5j9y1jLvJbvvFdBHNm9oLSHKPK_KgKu2JQhe9xIeSZcZXVu" 
+                  alt="Costillar Ahumado estilo Cracovia" 
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <span class="absolute top-3 left-3 bg-surface-container-lowest/90 backdrop-blur-md text-secondary text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded border border-secondary/20">
+                  Humo Lento 4h
+                </span>
+              </div>
+              <div class="p-6">
+                <div class="flex items-start justify-between gap-2 mb-2">
+                  <h3 class="font-serif text-xl font-bold text-on-surface">Costillar Ahumado de Cracovia</h3>
+                  <span class="font-serif text-xl font-bold text-secondary shrink-0">18,50 €</span>
+                </div>
+                <p class="text-xs text-on-surface-variant leading-relaxed mb-4">
+                  Costilla carnosa marinada en cerveza negra y semillas de comino, cocinada a baja temperatura y terminada en leña viva. Se desprende sola del hueso.
+                </p>
+                <div class="flex flex-wrap gap-1.5 text-[10px] uppercase font-semibold text-outline">
+                  <span class="px-2 py-0.5 rounded bg-surface-container-high">Carne Melosa</span>
+                  <span class="px-2 py-0.5 rounded bg-surface-container-high">Ahumado Intenso</span>
+                </div>
+              </div>
+            </div>
+            <div class="p-6 pt-0">
+              <button onclick="quickAdd('Costillar Ahumado de Cracovia', 18.50)" class="w-full py-3 rounded-lg bg-surface-container-high hover:bg-primary-container hover:text-white text-secondary font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-all">
+                <span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+                <span>Añadir al Pedido</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Dish 4: Pierogi Ruskie Artesanales (Plato Polaco Estrella) -->
+          <article class="menu-item bg-surface-container rounded-xl overflow-hidden border border-surface-container-high flex flex-col justify-between group hover:border-primary-container/50 transition-all duration-300" data-category="polish">
+            <div>
+              <div class="relative h-60 overflow-hidden bg-surface-container-high">
+                <img 
+                  src="https://images.unsplash.com/photo-1541832676-9b763b0239ab?auto=format&fit=crop&w=700&q=80" 
+                  alt="Pierogi Ruskie caseros hechos a mano" 
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <span class="absolute top-3 left-3 bg-secondary text-surface text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded">
+                  Kuchnia Polska Clásica
+                </span>
+              </div>
+              <div class="p-6">
+                <div class="flex items-start justify-between gap-2 mb-2">
+                  <h3 class="font-serif text-xl font-bold text-on-surface">Pierogi Ruskie Caseros (6 uds)</h3>
+                  <span class="font-serif text-xl font-bold text-secondary shrink-0">6,90 €</span>
+                </div>
+                <p class="text-xs text-on-surface-variant leading-relaxed mb-4">
+                  Masa elástica hecha a mano rellena de puré de patata sedoso, queso fresco artesano <em>twaróg</em> y cebolla pochada a fuego lento con mantequilla dorada.
+                </p>
+                <div class="flex flex-wrap gap-1.5 text-[10px] uppercase font-semibold text-outline">
+                  <span class="px-2 py-0.5 rounded bg-surface-container-high">Elaboración Diaria</span>
+                  <span class="px-2 py-0.5 rounded bg-surface-container-high">Vegetariano</span>
+                </div>
+              </div>
+            </div>
+            <div class="p-6 pt-0">
+              <button onclick="quickAdd('Pierogi Ruskie Caseros (6 uds)', 6.90)" class="w-full py-3 rounded-lg bg-surface-container-high hover:bg-primary-container hover:text-white text-secondary font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-all">
+                <span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+                <span>Añadir al Pedido</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Dish 5: Bigos Tradicional del Cazador -->
+          <article class="menu-item bg-surface-container rounded-xl overflow-hidden border border-surface-container-high flex flex-col justify-between group hover:border-primary-container/50 transition-all duration-300" data-category="polish">
+            <div>
+              <div class="relative h-60 overflow-hidden bg-surface-container-high">
+                <img 
+                  src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=700&q=80" 
+                  alt="Bigos del Cazador Guiso Tradicional" 
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <span class="absolute top-3 left-3 bg-surface-container-lowest/90 backdrop-blur-md text-secondary text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded border border-secondary/20">
+                  Guiso 3 Días
+                </span>
+              </div>
+              <div class="p-6">
+                <div class="flex items-start justify-between gap-2 mb-2">
+                  <h3 class="font-serif text-xl font-bold text-on-surface">Bigos Tradicional del Cazador</h3>
+                  <span class="font-serif text-xl font-bold text-secondary shrink-0">7,50 €</span>
+                </div>
+                <p class="text-xs text-on-surface-variant leading-relaxed mb-4">
+                  El rey de los guisos polacos: col fermentada (chucrut artesano), carnes ahumadas de la casa, setas silvestres de bosque y ciruelas pasas confitadas.
+                </p>
+                <div class="flex flex-wrap gap-1.5 text-[10px] uppercase font-semibold text-outline">
+                  <span class="px-2 py-0.5 rounded bg-surface-container-high">Sabor Profundo</span>
+                  <span class="px-2 py-0.5 rounded bg-surface-container-high">Sin gluten</span>
+                </div>
+              </div>
+            </div>
+            <div class="p-6 pt-0">
+              <button onclick="quickAdd('Bigos Tradicional del Cazador', 7.50)" class="w-full py-3 rounded-lg bg-surface-container-high hover:bg-primary-container hover:text-white text-secondary font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-all">
+                <span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+                <span>Añadir al Pedido</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Dish 6: Ensalada Mizeria Refrescante & Patatas al Romero -->
+          <article class="menu-item bg-surface-container rounded-xl overflow-hidden border border-surface-container-high flex flex-col justify-between group hover:border-primary-container/50 transition-all duration-300" data-category="sides">
+            <div>
+              <div class="relative h-60 overflow-hidden bg-surface-container-high">
+                <img 
+                  src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=700&q=80" 
+                  alt="Ensalada Mizeria Tradicional con Eneldo" 
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <span class="absolute top-3 left-3 bg-surface-container-lowest/90 backdrop-blur-md text-secondary text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded border border-secondary/20">
+                  Guarnición Imprescindible
+                </span>
+              </div>
+              <div class="p-6">
+                <div class="flex items-start justify-between gap-2 mb-2">
+                  <h3 class="font-serif text-xl font-bold text-on-surface">Ensalada Mizeria & Eneldo Fresco</h3>
+                  <span class="font-serif text-xl font-bold text-secondary shrink-0">4,50 €</span>
+                </div>
+                <p class="text-xs text-on-surface-variant leading-relaxed mb-4">
+                  Finas láminas de pepino crujiente con salsa ligera de crema agria (<em>śmietana</em>), abundante eneldo silvestre y zumo de limón. El contrapunto fresco ideal.
+                </p>
+                <div class="flex flex-wrap gap-1.5 text-[10px] uppercase font-semibold text-outline">
+                  <span class="px-2 py-0.5 rounded bg-surface-container-high">Refrescante</span>
+                  <span class="px-2 py-0.5 rounded bg-surface-container-high">Digestivo</span>
+                </div>
+              </div>
+            </div>
+            <div class="p-6 pt-0">
+              <button onclick="quickAdd('Ensalada Mizeria & Eneldo Fresco', 4.50)" class="w-full py-3 rounded-lg bg-surface-container-high hover:bg-primary-container hover:text-white text-secondary font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-all">
+                <span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+                <span>Añadir al Pedido</span>
+              </button>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================================= -->
+    <!-- 5. GUARNICIONES DEL DÍA & SECCIÓN TRAITEUR                                 -->
+    <!-- ========================================================================= -->
+    <section id="comida-polaca" class="w-full py-16 bg-surface-container-lowest border-y border-surface-container-high">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header Banner -->
+        <div class="p-6 lg:p-8 rounded-2xl bg-surface-container border border-surface-container-high flex flex-col md:flex-row items-start md:items-center justify-between gap-6 mb-12">
+          <div>
+            <div class="flex items-center gap-2 text-primary-container text-xs font-bold uppercase tracking-wider mb-1">
+              <span class="material-symbols-outlined text-[18px]">restaurant_menu</span>
+              <span>Comida Preparada & Acompañamientos</span>
+            </div>
+            <h2 class="font-serif text-2xl sm:text-3xl font-bold text-on-surface">
+              Platos de Obrador para Llevar
+            </h2>
+            <p class="text-xs sm:text-sm text-on-surface-variant mt-1 max-w-xl">
+              Cocinamos cada mañana a fuego lento para que solo tengas que llegar a casa, abrir tu mesa y disfrutar sin manchar una sartén.
+            </p>
+          </div>
+
+          <div class="bg-surface-container-high/70 p-4 rounded-xl border border-surface-container-highest text-center shrink-0">
+            <span class="text-[10px] uppercase tracking-wider text-secondary font-bold block">Promoción Menú Completo</span>
+            <span class="text-sm font-bold text-on-surface block mt-0.5">Añade 2 acompañamientos con tu pollo</span>
+            <span class="text-xs text-primary font-bold">con un 15% de descuento directo</span>
+          </div>
+        </div>
+
+        <!-- Sides Table List -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          
+          <!-- Side Item 1 -->
+          <div class="bg-surface-container p-5 rounded-xl border border-surface-container-high flex items-center justify-between gap-4">
+            <div class="flex items-center gap-4">
+              <div class="w-16 h-16 rounded-lg overflow-hidden bg-surface-container-high shrink-0">
+                <img src="https://images.unsplash.com/photo-1573140247632-f8fd74997d5c?auto=format&fit=crop&w=200&q=80" alt="Patatas asadas al carbón" class="w-full h-full object-cover"/>
+              </div>
+              <div>
+                <h3 class="font-serif text-base font-bold text-on-surface">Patatas Asadas al Romero & Ajo Ahumado</h3>
+                <p class="text-xs text-on-surface-variant">Patata de montaña asada al rescoldo con flor de sal y romero</p>
+                <span class="text-xs font-bold text-secondary mt-1 block">4,90 €</span>
+              </div>
+            </div>
+            <button onclick="quickAdd('Patatas Asadas al Romero & Ajo Ahumado', 4.90)" class="px-3 py-2 rounded bg-surface-container-high hover:bg-primary-container hover:text-white text-secondary text-xs font-bold uppercase transition-colors shrink-0">
+              + Añadir
+            </button>
+          </div>
+
+          <!-- Side Item 2 -->
+          <div class="bg-surface-container p-5 rounded-xl border border-surface-container-high flex items-center justify-between gap-4">
+            <div class="flex items-center gap-4">
+              <div class="w-16 h-16 rounded-lg overflow-hidden bg-surface-container-high shrink-0">
+                <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=200&q=80" alt="Placki Ziemniaczane tortitas de patata" class="w-full h-full object-cover"/>
+              </div>
+              <div>
+                <h3 class="font-serif text-base font-bold text-on-surface">Placki Ziemniaczane (Tortitas de Patata)</h3>
+                <p class="text-xs text-on-surface-variant">Tortitas crujientes doradas al momento con crema agria</p>
+                <span class="text-xs font-bold text-secondary mt-1 block">5,90 €</span>
+              </div>
+            </div>
+            <button onclick="quickAdd('Placki Ziemniaczane (Tortitas de Patata)', 5.90)" class="px-3 py-2 rounded bg-surface-container-high hover:bg-primary-container hover:text-white text-secondary text-xs font-bold uppercase transition-colors shrink-0">
+              + Añadir
+            </button>
+          </div>
+
+          <!-- Side Item 3 -->
+          <div class="bg-surface-container p-5 rounded-xl border border-surface-container-high flex items-center justify-between gap-4">
+            <div class="flex items-center gap-4">
+              <div class="w-16 h-16 rounded-lg overflow-hidden bg-surface-container-high shrink-0 flex items-center justify-center text-primary-container bg-surface-container-lowest">
+                <span class="material-symbols-outlined text-[28px]">soup_kitchen</span>
+              </div>
+              <div>
+                <h3 class="font-serif text-base font-bold text-on-surface">Trío de Salsas Caseras (Chrzan, Mostaza, BBQ)</h3>
+                <p class="text-xs text-on-surface-variant">Rábano picante polaco, mostaza antigua y barbacoa de ciruela</p>
+                <span class="text-xs font-bold text-secondary mt-1 block">3,50 €</span>
+              </div>
+            </div>
+            <button onclick="quickAdd('Trío de Salsas Caseras', 3.50)" class="px-3 py-2 rounded bg-surface-container-high hover:bg-primary-container hover:text-white text-secondary text-xs font-bold uppercase transition-colors shrink-0">
+              + Añadir
+            </button>
+          </div>
+
+          <!-- Side Item 4 -->
+          <div class="bg-surface-container p-5 rounded-xl border border-surface-container-high flex items-center justify-between gap-4">
+            <div class="flex items-center gap-4">
+              <div class="w-16 h-16 rounded-lg overflow-hidden bg-surface-container-high shrink-0 flex items-center justify-center text-secondary bg-surface-container-lowest">
+                <span class="material-symbols-outlined text-[28px]">lunch_dining</span>
+              </div>
+              <div>
+                <h3 class="font-serif text-base font-bold text-on-surface">Salchicha Polaca Kiełbasa Ahumada</h3>
+                <p class="text-xs text-on-surface-variant">Embutido tradicional ahumado con leña de cerezo y ajo</p>
+                <span class="text-xs font-bold text-secondary mt-1 block">5,50 €</span>
+              </div>
+            </div>
+            <button onclick="quickAdd('Salchicha Kiełbasa Ahumada', 5.50)" class="px-3 py-2 rounded bg-surface-container-high hover:bg-primary-container hover:text-white text-secondary text-xs font-bold uppercase transition-colors shrink-0">
+              + Añadir
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================================= -->
+    <!-- 6. NUESTRA HISTORIA & MANIFIESTO GASTRONÓMICO                              -->
+    <!-- ========================================================================= -->
+    <section id="nuestra-historia" class="w-full py-20 bg-surface">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Image of the Hearth / Roaster Craft -->
+          <div class="lg:col-span-6 relative">
+            <div class="rounded-2xl overflow-hidden border border-surface-container-high shadow-2xl">
+              <img 
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9NMdif7k9wO3bBaKjKXgFU97YJ1bTrb1JRHVxSNXGp4hh-B5nowezGmN66w3DG71wgCu3lMXz_Zf9AIpsxi6GGo-Bm7ZUNaUYNybI_f4ukfCz_YWr0R2PepLYoZE2xyZd1J9cVLpUt0oxhMIWJqj4DwmGubqFW-VpC3mgbdgJIMRN5JxB284EUspgFq105DWcnclHqir8e4NrapPTeHG7TpINOKchtYGbxRHbR7mf" 
+                alt="Maestro asador trabajando ante las brasas de encina y roble" 
+                class="w-full h-[400px] sm:h-[480px] object-cover"
+              />
+            </div>
+            
+            <!-- Floating Counter Pillars -->
+            <div class="grid grid-cols-3 gap-2 mt-4 text-center">
+              <div class="p-4 rounded-xl bg-surface-container border border-surface-container-high">
+                <span class="font-serif text-2xl font-bold text-secondary block">24h</span>
+                <span class="text-[10px] uppercase tracking-wider text-on-surface-variant font-semibold">Salmuera Especiada</span>
+              </div>
+              <div class="p-4 rounded-xl bg-surface-container border border-surface-container-high">
+                <span class="font-serif text-2xl font-bold text-secondary block">3h</span>
+                <span class="text-[10px] uppercase tracking-wider text-on-surface-variant font-semibold">Ahumado en Foso</span>
+              </div>
+              <div class="p-4 rounded-xl bg-surface-container border border-surface-container-high">
+                <span class="font-serif text-2xl font-bold text-secondary block">100%</span>
+                <span class="text-[10px] uppercase tracking-wider text-on-surface-variant font-semibold">Madera Noble</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Story Copy -->
+          <div class="lg:col-span-6 flex flex-col gap-6">
+            <div class="inline-flex items-center gap-2 self-start px-3 py-1 rounded-full bg-surface-container-high text-secondary text-xs uppercase tracking-widest font-bold">
+              <span>El Fuego • La Madera • La Memoria</span>
+            </div>
+
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-on-surface leading-tight">
+              Herederos del fuego y el respeto absoluto a la materia prima.
+            </h2>
+
+            <p class="text-sm sm:text-base text-on-surface-variant leading-relaxed">
+              En <strong class="text-on-surface font-semibold">SMOKED CHICKEN</strong> redefinimos el clásico pollo asado para llevar elevándolo a los estándares de la alta gastronomía artesanal. Seleccionamos únicamente aves camperas criadas en libertad, alimentadas con grano natural y curadas con paciencia infinita.
+            </p>
+
+            <p class="text-sm sm:text-base text-on-surface-variant leading-relaxed">
+              El secreto reside en la combinación del ahumado en foso con madera noble de haya y roble, que otorga notas balsámicas profundas, y la compañía reconfortante de la cocina polaca tradicional: pierogi hechos uno a uno cada madrugada, y guisos lentos que saben a domingo en familia.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+              <div class="flex items-start gap-3 p-3 rounded-lg bg-surface-container">
+                <span class="material-symbols-outlined text-secondary text-[22px] mt-0.5">verified_user</span>
+                <div>
+                  <h4 class="text-xs uppercase font-bold text-on-surface">Trazabilidad Total</h4>
+                  <p class="text-xs text-on-surface-variant">Cada ave cuenta con registro de origen y granja.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3 p-3 rounded-lg bg-surface-container">
+                <span class="material-symbols-outlined text-primary-container text-[22px] mt-0.5">forest</span>
+                <div>
+                  <h4 class="text-xs uppercase font-bold text-on-surface">Leña Certificada</h4>
+                  <p class="text-xs text-on-surface-variant">Poda sostenible, libre de resinas y acelerantes.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========================================================================= -->
+    <!-- 7. CÓMO ENCARGAR TU ASADO (3 PASOS SIN COLAS)                              -->
+    <!-- ========================================================================= -->
+    <section id="como-funciona" class="w-full py-16 bg-surface-container-lowest border-y border-surface-container-high">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        
+        <span class="text-xs uppercase tracking-widest text-secondary font-bold">Experiencia Sin Esperas</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-on-surface mt-1">Cómo Encargar Tu Asado</h2>
+        <p class="text-sm text-on-surface-variant max-w-xl mx-auto mt-2">
+          Horneamos tantas tandas limitadas cada hora para servir el producto directamente en su punto óptimo de jugosidad y piel crujiente.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 text-left">
+          
+          <div class="p-6 rounded-2xl bg-surface-container border border-surface-container-high relative">
+            <span class="w-10 h-10 rounded-full bg-primary-container/20 border border-primary-container text-primary-container font-serif font-bold text-lg flex items-center justify-center mb-4">
+              1
+            </span>
+            <h3 class="font-serif text-lg font-bold text-on-surface mb-2">Elige tu Franja de Recogida</h3>
+            <p class="text-xs text-on-surface-variant leading-relaxed">
+              Selecciona la tanda que mejor te venga. Tu pedido no espera en una vitrina: sale recién cortado y tostado al minuto de tu llegada.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-surface-container border border-surface-container-high relative">
+            <span class="w-10 h-10 rounded-full bg-secondary/20 border border-secondary text-secondary font-serif font-bold text-lg flex items-center justify-center mb-4">
+              2
+            </span>
+            <h3 class="font-serif text-lg font-bold text-on-surface mb-2">Arma Tu Menú Asador</h3>
+            <p class="text-xs text-on-surface-variant leading-relaxed">
+              Combina tu pollo al ast con auténticos Pierogi artesanales, ensalada Mizeria o patatas al carbón.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-surface-container border border-surface-container-high relative">
+            <span class="w-10 h-10 rounded-full bg-primary-container/20 border border-primary-container text-primary-container font-serif font-bold text-lg flex items-center justify-center mb-4">
+              3
+            </span>
+            <h3 class="font-serif text-lg font-bold text-on-surface mb-2">Recoge Caliente y al Instante</h3>
+            <p class="text-xs text-on-surface-variant leading-relaxed">
+              Entrega express en mostrador exclusivo de pedidos online en caja térmica sellada. Cero colas, directo a tu mesa.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================================= -->
+    <!-- 8. MESA DE PEDIDOS / EL FORMULARIO DE CONVERSIÓN (CTA PRINCIPAL)           -->
+    <!-- ========================================================================= -->
+    <section id="hacer-pedido" class="w-full py-20 bg-surface relative">
+      
+      <!-- Subtle Background Glow -->
+      <div class="absolute inset-x-0 top-1/2 -translate-y-1/2 h-96 bg-primary-container/10 blur-[150px] pointer-events-none"></div>
+
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <!-- Main Form Card Container -->
+        <div class="bg-surface-container-low border border-surface-container-high rounded-2xl p-6 sm:p-10 shadow-deep-card">
+          
+          <!-- Card Header -->
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-8 border-b border-surface-container-high">
+            <div>
+              <div class="flex items-center gap-2 text-primary-container text-xs uppercase tracking-widest font-bold">
+                <span class="material-symbols-outlined text-[18px]">bolt</span>
+                <span>Mesa de Pedidos Rápidos</span>
+              </div>
+              <h2 class="font-serif text-2xl sm:text-3xl font-bold text-on-surface mt-1">
+                Reserva tu Pollo al Ast Ahumado para Hoy
+              </h2>
+            </div>
+            <div class="flex items-center gap-2 text-on-surface-variant text-xs bg-surface-container px-3.5 py-2 rounded-lg border border-surface-container-high shrink-0">
+              <span class="material-symbols-outlined text-secondary text-[18px]">storefront</span>
+              <span>Obrador Central: Calle Mayor 42</span>
+            </div>
+          </div>
+
+          <!-- The Lead/Order Form -->
+          <form id="order-form" onsubmit="handleOrderSubmit(event)" class="mt-8 space-y-8">
+            
+            <!-- PASO 1: LOGÍSTICA DE RECOGIDA (DÍA Y HORA/TANDA) -->
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-xs uppercase tracking-wider text-secondary font-bold flex items-center gap-1.5">
+                  <span class="w-5 h-5 rounded-full bg-secondary/20 text-secondary text-[11px] flex items-center justify-center font-bold">1</span>
+                  Cuándo recoges tu pedido
+                </span>
+                <span class="text-[11px] text-outline">Garantía de salida caliente</span>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                
+                <!-- Día -->
+                <div class="flex flex-col gap-1.5">
+                  <label class="text-[11px] uppercase tracking-wider text-on-surface-variant font-semibold">Día de Recogida</label>
+                  <div class="relative">
+                    <select id="form-day" class="w-full h-12 bg-surface-container text-on-surface text-sm px-4 rounded-lg border border-surface-container-high focus:outline-none focus:border-primary-container transition-colors appearance-none cursor-pointer">
+                      <option value="hoy">Hoy, Sábado (Recomendado)</option>
+                      <option value="manana">Mañana, Domingo (Turno mediodía)</option>
+                      <option value="proximo">Próximo Martes (Reapertura obrador)</option>
+                    </select>
+                    <span class="material-symbols-outlined absolute right-3 top-3 text-outline pointer-events-none text-[20px]">calendar_today</span>
+                  </div>
+                </div>
+
+                <!-- Tanda Horaria -->
+                <div class="flex flex-col gap-1.5">
+                  <label class="text-[11px] uppercase tracking-wider text-on-surface-variant font-semibold">Franja Horaria / Tanda de Salida</label>
+                  <div class="relative">
+                    <select id="form-time" class="w-full h-12 bg-surface-container text-on-surface text-sm px-4 rounded-lg border border-surface-container-high focus:outline-none focus:border-primary-container transition-colors appearance-none cursor-pointer" onchange="updateTandaNotice()">
+                      <option value="13:00">13:00 h — Tanda 1 (Casi completo)</option>
+                      <option value="13:45" selected>13:45 h — Tanda 2 (Recomendada · 7 libres)</option>
+                      <option value="14:30">14:30 h — Tanda 3 (Disponible)</option>
+                      <option value="15:15">15:15 h — Tanda 4 (Últimas piezas)</option>
+                      <option value="20:30">20:30 h — Tanda Noche 1 (Disponible)</option>
+                      <option value="21:15">21:15 h — Tanda Noche 2 (Disponible)</option>
+                    </select>
+                    <span class="material-symbols-outlined absolute right-3 top-3 text-outline pointer-events-none text-[20px]">schedule</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- PASO 2: SELECCIÓN DEL POLLO Y PREFERENCIA DE CORTE -->
+            <div class="pt-6 border-t border-surface-container-high">
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-xs uppercase tracking-wider text-secondary font-bold flex items-center gap-1.5">
+                  <span class="w-5 h-5 rounded-full bg-secondary/20 text-secondary text-[11px] flex items-center justify-center font-bold">2</span>
+                  Selecciona tu Pollo y Formato
+                </span>
+                <span class="text-[11px] text-outline">Incluye salsa de asado desgrasada</span>
+              </div>
+
+              <!-- Main Chicken Options as Clickable Cards -->
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3" id="chicken-options">
+                
+                <label class="relative flex flex-col p-4 rounded-xl bg-surface-container border border-primary-container/80 cursor-pointer hover:border-primary-container transition-all" onclick="selectChickenOption(this, 'entero', 15.50)">
+                  <input type="radio" name="chicken_choice" value="entero" checked class="sr-only"/>
+                  <span class="text-xs uppercase font-bold text-primary-container tracking-wider">1 Pollo Entero</span>
+                  <span class="font-serif text-xl font-bold text-on-surface mt-1">15,50 €</span>
+                  <span class="text-[11px] text-on-surface-variant mt-1">Ideal para 2-3 comensales</span>
+                  <span class="w-3 h-3 rounded-full bg-primary-container absolute top-4 right-4 ring-4 ring-primary-container/20"></span>
+                </label>
+
+                <label class="relative flex flex-col p-4 rounded-xl bg-surface-container border border-surface-container-high cursor-pointer hover:border-primary-container transition-all" onclick="selectChickenOption(this, 'medio', 8.90)">
+                  <input type="radio" name="chicken_choice" value="medio" class="sr-only"/>
+                  <span class="text-xs uppercase font-bold text-on-surface tracking-wider">Medio Pollo</span>
+                  <span class="font-serif text-xl font-bold text-on-surface mt-1">8,90 €</span>
+                  <span class="text-[11px] text-on-surface-variant mt-1">Ideal para 1-2 comensales</span>
+                  <span class="w-3 h-3 rounded-full bg-surface-container-high absolute top-4 right-4"></span>
+                </label>
+
+                <label class="relative flex flex-col p-4 rounded-xl bg-surface-container border border-surface-container-high cursor-pointer hover:border-primary-container transition-all" onclick="selectChickenOption(this, 'banquete', 28.90)">
+                  <input type="radio" name="chicken_choice" value="banquete" class="sr-only"/>
+                  <span class="text-xs uppercase font-bold text-secondary tracking-wider">Banquete Festín</span>
+                  <span class="font-serif text-xl font-bold text-on-surface mt-1">28,90 €</span>
+                  <span class="text-[11px] text-on-surface-variant mt-1">1 Pollo + Pierogis + Patatas</span>
+                  <span class="w-3 h-3 rounded-full bg-surface-container-high absolute top-4 right-4"></span>
+                </label>
+
+              </div>
+
+              <!-- Cutting Preference (Evita reclamos comunes en pollerías) -->
+              <div class="mt-4 p-3.5 rounded-lg bg-surface-container flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                <span class="text-xs text-on-surface font-semibold flex items-center gap-2">
+                  <span class="material-symbols-outlined text-secondary text-[18px]">restaurant</span>
+                  ¿Cómo prefieres el corte?
+                </span>
+                <div class="flex items-center gap-2">
+                  <label class="inline-flex items-center gap-1.5 text-xs text-on-surface-variant cursor-pointer">
+                    <input type="radio" name="cutting_pref" value="entero" checked class="accent-primary-container"/>
+                    <span>Sin cortar (Conserva máximos jugos)</span>
+                  </label>
+                  <label class="inline-flex items-center gap-1.5 text-xs text-on-surface-variant cursor-pointer ml-3">
+                    <input type="radio" name="cutting_pref" value="cortado" class="accent-primary-container"/>
+                    <span>Troceado en 4/8 (Listo para comer)</span>
+                  </label>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- PASO 3: ACOMPAÑAMIENTOS POLACOS Y EXTRAS RÁPIDOS -->
+            <div class="pt-6 border-t border-surface-container-high">
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-xs uppercase tracking-wider text-secondary font-bold flex items-center gap-1.5">
+                  <span class="w-5 h-5 rounded-full bg-secondary/20 text-secondary text-[11px] flex items-center justify-center font-bold">3</span>
+                  Acompañamientos & Especialidades Polacas (1 Clic)
+                </span>
+                <span class="text-[11px] text-primary-container font-semibold">Opcionales</span>
+              </div>
+
+              <!-- Quick Add Pills -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                
+                <label class="flex items-center justify-between p-3 rounded-lg bg-surface-container border border-surface-container-high cursor-pointer hover:border-secondary transition-colors">
+                  <div class="flex items-center gap-2.5">
+                    <input type="checkbox" id="extra-pierogi" onchange="recalculateTotal()" class="w-4 h-4 rounded accent-primary-container cursor-pointer"/>
+                    <div>
+                      <span class="text-xs font-bold text-on-surface block">Pierogi Ruskie Artesanos (6 uds)</span>
+                      <span class="text-[10px] text-on-surface-variant">Con cebolla pochada y mantequilla</span>
+                    </div>
+                  </div>
+                  <span class="text-xs font-bold text-secondary">+6,90 €</span>
+                </label>
+
+                <label class="flex items-center justify-between p-3 rounded-lg bg-surface-container border border-surface-container-high cursor-pointer hover:border-secondary transition-colors">
+                  <div class="flex items-center gap-2.5">
+                    <input type="checkbox" id="extra-mizeria" onchange="recalculateTotal()" class="w-4 h-4 rounded accent-primary-container cursor-pointer"/>
+                    <div>
+                      <span class="text-xs font-bold text-on-surface block">Ensalada Mizeria Tradicional</span>
+                      <span class="text-[10px] text-on-surface-variant">Pepino fresco, crema agria y eneldo</span>
+                    </div>
+                  </div>
+                  <span class="text-xs font-bold text-secondary">+4,50 €</span>
+                </label>
+
+                <label class="flex items-center justify-between p-3 rounded-lg bg-surface-container border border-surface-container-high cursor-pointer hover:border-secondary transition-colors">
+                  <div class="flex items-center gap-2.5">
+                    <input type="checkbox" id="extra-patatas" onchange="recalculateTotal()" class="w-4 h-4 rounded accent-primary-container cursor-pointer"/>
+                    <div>
+                      <span class="text-xs font-bold text-on-surface block">Patatas Asadas al Romero y Ajo</span>
+                      <span class="text-[10px] text-on-surface-variant">Asadas al carbón y rescoldo</span>
+                    </div>
+                  </div>
+                  <span class="text-xs font-bold text-secondary">+4,90 €</span>
+                </label>
+
+                <label class="flex items-center justify-between p-3 rounded-lg bg-surface-container border border-surface-container-high cursor-pointer hover:border-secondary transition-colors">
+                  <div class="flex items-center gap-2.5">
+                    <input type="checkbox" id="extra-bigos" onchange="recalculateTotal()" class="w-4 h-4 rounded accent-primary-container cursor-pointer"/>
+                    <div>
+                      <span class="text-xs font-bold text-on-surface block">Ración de Bigos del Cazador</span>
+                      <span class="text-[10px] text-on-surface-variant">Guiso tradicional de col y ahumados</span>
+                    </div>
+                  </div>
+                  <span class="text-xs font-bold text-secondary">+7,50 €</span>
+                </label>
+
+              </div>
+            </div>
+
+            <!-- PASO 4: DATOS DEL CLIENTE (MÍNIMOS Y SIN FRICCIÓN) -->
+            <div class="pt-6 border-t border-surface-container-high">
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-xs uppercase tracking-wider text-secondary font-bold flex items-center gap-1.5">
+                  <span class="w-5 h-5 rounded-full bg-secondary/20 text-secondary text-[11px] flex items-center justify-center font-bold">4</span>
+                  Datos para avisarte cuando esté crujiente
+                </span>
+                <span class="text-[11px] text-outline">Solo lo imprescindible</span>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                
+                <div class="flex flex-col gap-1.5">
+                  <label for="client-name" class="text-[11px] uppercase tracking-wider text-on-surface-variant font-semibold">Tu Nombre</label>
+                  <input type="text" id="client-name" required placeholder="Ej. Carlos Martínez" class="w-full h-12 bg-surface-container text-on-surface text-sm px-4 rounded-lg border border-surface-container-high focus:outline-none focus:border-primary-container transition-colors"/>
+                </div>
+
+                <div class="flex flex-col gap-1.5">
+                  <label for="client-phone" class="text-[11px] uppercase tracking-wider text-on-surface-variant font-semibold">Teléfono / WhatsApp</label>
+                  <input type="tel" id="client-phone" required placeholder="Ej. 612 345 678" class="w-full h-12 bg-surface-container text-on-surface text-sm px-4 rounded-lg border border-surface-container-high focus:outline-none focus:border-primary-container transition-colors"/>
+                </div>
+
+              </div>
+
+              <div class="mt-3 flex items-center gap-2 text-xs text-on-surface-variant">
+                <span class="material-symbols-outlined text-emerald-400 text-[16px]">chat</span>
+                <span>Te enviaremos un WhatsApp gratuito en cuanto tu pollo salga del horno.</span>
+              </div>
+            </div>
+
+            <!-- LIVE ORDER SUMMARY BADGE & PRICING -->
+            <div class="p-4 rounded-xl bg-surface-container-high border border-surface-container-highest flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+              <div>
+                <span class="text-[10px] uppercase tracking-widest text-secondary font-bold block">Resumen del Pedido</span>
+                <p id="order-summary-text" class="text-xs text-on-surface font-medium mt-0.5">
+                  1 Pollo al Ast Ahumado (Entero) · Tanda 13:45 h
+                </p>
+              </div>
+              <div class="flex items-center justify-between sm:justify-end w-full sm:w-auto gap-4">
+                <div class="text-left sm:text-right">
+                  <span class="text-[10px] uppercase tracking-wider text-on-surface-variant block">Total a pagar al recoger</span>
+                  <span id="order-total-display" class="font-serif text-2xl font-bold text-secondary">15,50 €</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- SUBMIT BUTTON & RISK REVERSAL -->
+            <div class="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4">
+              <div class="flex items-center gap-2 text-xs text-on-surface-variant">
+                <span class="material-symbols-outlined text-secondary text-[18px]">verified_user</span>
+                <span>Pagas cómodamente en mostrador (Efectivo o Tarjeta) · Sin comisiones</span>
+              </div>
+
+              <button type="submit" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-primary-container hover:bg-primary text-white hover:text-on-primary font-bold text-sm uppercase tracking-wider px-8 py-4 rounded-lg transition-all duration-200 shadow-glow-primary hover:shadow-none hover:translate-y-0.5">
+                <span class="material-symbols-outlined text-[22px]">bolt</span>
+                <span>Confirmar Pedido & Bloquear Tanda</span>
+              </button>
+            </div>
+
+          </form>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================================= -->
+    <!-- 9. SOCIAL PROOF & TESTIMONIOS GASTRONÓMICOS                               -->
+    <!-- ========================================================================= -->
+    <section class="w-full py-20 bg-surface">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+          <div>
+            <span class="text-xs uppercase tracking-widest text-secondary font-bold block mb-1">Opiniones Verificadas • Prensa Gastronómica</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-on-surface">Lo Que Dicen de Nuestro Fuego</h2>
+          </div>
+
+          <div class="flex items-center gap-1.5 text-secondary bg-surface-container px-4 py-2 rounded-full border border-surface-container-high">
+            <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="text-xs font-bold text-on-surface ml-2">4.9 / 5 · Más de 850 reseñas</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <article class="bg-surface-container p-6 rounded-2xl border border-surface-container-high flex flex-col justify-between">
+            <div>
+              <div class="flex text-secondary mb-3">
+                <span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+              <p class="text-sm text-on-surface italic leading-relaxed">
+                “Hacía años que no probaba una pechuga tan jugosa con la piel tan quebradiza y aromática. El toque de humo de roble junto con los Pierogis de queso blanco es un billete directo a Cracovia sin moverte de casa.”
+              </p>
+            </div>
+            <div class="pt-4 border-t border-surface-container-high mt-6">
+              <p class="text-xs uppercase font-bold text-on-surface">Rodrigo San Martín</p>
+              <p class="text-[11px] text-on-surface-variant">Crítico Gastronómico & Sommelier</p>
+            </div>
+          </article>
+
+          <article class="bg-surface-container p-6 rounded-2xl border border-surface-container-high flex flex-col justify-between">
+            <div>
+              <div class="flex text-secondary mb-3">
+                <span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+              <p class="text-sm text-on-surface italic leading-relaxed">
+                “La puntualidad del sistema de tandas es asombrosa. Pides online a las 14:00, entras al obrador, dices tu nombre y te entregan la caja humeando sin esperar un minuto de cola. Se ha convertido en nuestro ritual dominical obligatorio.”
+              </p>
+            </div>
+            <div class="pt-4 border-t border-surface-container-high mt-6">
+              <p class="text-xs uppercase font-bold text-on-surface">Beatriz L. de Haro</p>
+              <p class="text-[11px] text-on-surface-variant">Clienta habitual de fines de semana</p>
+            </div>
+          </article>
+
+          <article class="bg-surface-container p-6 rounded-2xl border border-surface-container-high flex flex-col justify-between">
+            <div>
+              <div class="flex text-secondary mb-3">
+                <span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+              <p class="text-sm text-on-surface italic leading-relaxed">
+                “El costillar ahumado y el pollo con miel y mostaza son de otro planeta. Además, la ensalada Mizeria le da una frescura increíble para equilibrar la comida. 10/10 calidad y servicio impecable.”
+              </p>
+            </div>
+            <div class="pt-4 border-t border-surface-container-high mt-6">
+              <p class="text-xs uppercase font-bold text-on-surface">Álvaro Gómez-Pardo</p>
+              <p class="text-[11px] text-on-surface-variant">Guía Gastro & Aficionado al BBQ</p>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================================= -->
+    <!-- 10. BANNER DE COMUNIDAD & COMPARTIR EL FESTÍN                              -->
+    <!-- ========================================================================= -->
+    <section class="w-full bg-surface-container-lowest py-12 border-t border-surface-container-high">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+          
+          <div class="flex items-center gap-4">
+            <div class="w-14 h-14 rounded-full bg-surface-container-high border border-surface-container-highest flex items-center justify-center text-secondary shrink-0">
+              <span class="material-symbols-outlined text-[28px]">photo_camera</span>
+            </div>
+            <div>
+              <span class="text-xs uppercase tracking-widest text-secondary font-bold">Comunidad • @smokedchicken.es</span>
+              <h3 class="font-serif text-xl font-bold text-on-surface">Comparte tu festín de domingo</h3>
+              <p class="text-xs text-on-surface-variant">Usa la etiqueta #SmokedChickenFestin y participa en el sorteo mensual de un Menú Banquete Completo.</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3 shrink-0">
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="px-5 py-3 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface text-xs font-bold uppercase tracking-wider transition-colors inline-flex items-center gap-2">
+              <span>Seguir en Instagram</span>
+              <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+            </a>
+            <a href="#hacer-pedido" class="px-5 py-3 rounded-lg bg-primary-container text-white hover:bg-primary text-xs font-bold uppercase tracking-wider transition-colors inline-flex items-center gap-2 shadow-md">
+              <span>Pedir Ahora</span>
+              <span class="material-symbols-outlined text-[16px]">shopping_bag</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ========================================================================= -->
+  <!-- 11. FOOTER CON HORARIOS, DIRECCIÓN Y CONTACTO                             -->
+  <!-- ========================================================================= -->
+  <footer class="w-full bg-surface-container-lowest border-t border-surface-container-high text-on-surface py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-surface-container-high">
+        
+        <!-- Brand Summary -->
+        <div class="lg:col-span-4 flex flex-col gap-4">
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-primary-container text-[26px]">local_fire_department</span>
+            <span class="font-serif text-2xl font-bold text-on-surface">SMOKED <span class="text-primary-container">CHICKEN</span></span>
+          </div>
+          <p class="text-xs text-on-surface-variant leading-relaxed max-w-sm">
+            Obrador gastronómico takeaway de aves camperas asadas lentamente con leña de roble y haya. Tradición culinaria de asador unida al confort de la auténtica gastronomía polaca.
+          </p>
+          <div class="flex items-center gap-3 pt-2">
+            <a href="#" class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-secondary hover:bg-primary-container hover:text-white transition-colors" title="Compartir">
+              <span class="material-symbols-outlined text-[18px]">share</span>
+            </a>
+            <a href="#" class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-secondary hover:bg-primary-container hover:text-white transition-colors" title="Instagram">
+              <span class="material-symbols-outlined text-[18px]">photo_camera</span>
+            </a>
+            <a href="https://wa.me/34612345678" target="_blank" rel="noopener" class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-secondary hover:bg-emerald-600 hover:text-white transition-colors" title="WhatsApp">
+              <span class="material-symbols-outlined text-[18px]">chat</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Horarios de Obrador -->
+        <div class="lg:col-span-3 flex flex-col gap-3">
+          <span class="text-xs uppercase tracking-widest text-secondary font-bold">Horarios de Hornos</span>
+          <ul class="text-xs text-on-surface-variant space-y-2">
+            <li class="flex justify-between py-1 border-b border-surface-container-high/40">
+              <span class="text-on-surface font-medium">Martes a Viernes</span>
+              <span>12:30 – 16:30 | 19:30 – 22:30</span>
+            </li>
+            <li class="flex justify-between py-1 border-b border-surface-container-high/40">
+              <span class="text-on-surface font-medium">Sábados y Domingos</span>
+              <span>11:30 – 17:00 | 19:30 – 23:00</span>
+            </li>
+            <li class="flex justify-between py-1 text-outline">
+              <span>Lunes</span>
+              <span>Cerrado por descanso</span>
+            </li>
+          </ul>
+          <div class="mt-2 p-2.5 rounded bg-surface-container-low border border-surface-container-high text-[11px] text-secondary flex items-center gap-2">
+            <span class="material-symbols-outlined text-[16px]">timer</span>
+            <span>Tandas calientes cada 45 minutos</span>
+          </div>
+        </div>
+
+        <!-- Despacho y Recogida -->
+        <div class="lg:col-span-3 flex flex-col gap-3">
+          <span class="text-xs uppercase tracking-widest text-secondary font-bold">Despacho & Obrador</span>
+          <div class="text-xs text-on-surface-variant space-y-2">
+            <p class="flex items-start gap-2">
+              <span class="material-symbols-outlined text-primary-container text-[18px] shrink-0 mt-0.5">location_on</span>
+              <span>Calle Mayor 42, Centro<br/>28013 Madrid, España</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-primary-container text-[18px] shrink-0">call</span>
+              <span>+34 912 345 678</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-emerald-400 text-[18px] shrink-0">chat</span>
+              <span>WhatsApp: +34 612 345 678</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Sello de Calidad -->
+        <div class="lg:col-span-2 flex flex-col gap-3">
+          <span class="text-xs uppercase tracking-widest text-secondary font-bold">Sello Artesanal</span>
+          <div class="p-4 rounded-xl bg-surface-container border border-surface-container-high text-center flex flex-col items-center gap-2">
+            <span class="material-symbols-outlined text-secondary text-[32px]">verified</span>
+            <span class="text-xs uppercase font-bold text-on-surface">100% Leña Noble</span>
+            <p class="text-[11px] text-on-surface-variant leading-tight">Pollo campero de origen certificado y ahumado natural sin químicos.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Legal & Copyright -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-on-surface-variant">
+        <p>© 2026 SMOKED CHICKEN S.L. Todos los derechos reservados.</p>
+        <div class="flex items-center gap-6 uppercase text-[11px] tracking-wider">
+          <a href="#" class="hover:text-on-surface transition-colors">Aviso Legal</a>
+          <a href="#" class="hover:text-on-surface transition-colors">Política de Privacidad</a>
+          <a href="#" class="hover:text-on-surface transition-colors">Alérgenos & Carta</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- ========================================================================= -->
+  <!-- 12. MODAL INTERACTIVO: TICKET DIGITAL DE PEDIDO CONFIRMADO                -->
+  <!-- ========================================================================= -->
+  <div id="order-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden flex items-center justify-center p-4">
+    <div class="bg-surface-container-low border border-secondary/40 rounded-2xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative overflow-hidden animate-in fade-in zoom-in duration-300">
+      
+      <!-- Top Glow Accent -->
+      <div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-primary-container via-secondary to-primary-container"></div>
+
+      <!-- Modal Close Button -->
+      <button onclick="closeModal()" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-surface-container hover:bg-surface-bright flex items-center justify-center text-on-surface-variant hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[20px]">close</span>
+      </button>
+
+      <!-- Ticket Header -->
+      <div class="text-center mb-6">
+        <div class="w-16 h-16 rounded-full bg-emerald-500/10 border border-emerald-500 text-emerald-400 mx-auto flex items-center justify-center mb-3">
+          <span class="material-symbols-outlined text-[36px]">check_circle</span>
+        </div>
+        <span class="text-xs uppercase tracking-widest text-secondary font-bold block">¡Reserva de Tanda Confirmada!</span>
+        <h3 class="font-serif text-2xl font-bold text-on-surface mt-1">Ticket de Recogida Digital</h3>
+        <p class="text-xs text-on-surface-variant mt-1">Tu asado está programado en el obrador para salir crujiente.</p>
+      </div>
+
+      <!-- Ticket Body Box -->
+      <div class="bg-surface-container rounded-xl p-5 border border-surface-container-high space-y-3.5 text-xs">
+        
+        <div class="flex justify-between items-center pb-2.5 border-b border-surface-container-high">
+          <span class="text-outline uppercase font-semibold">Código de Recogida:</span>
+          <span id="ticket-code" class="font-mono text-base font-bold text-secondary bg-surface-container-high px-2.5 py-0.5 rounded">#SC-8492</span>
+        </div>
+
+        <div class="flex justify-between items-center pb-2.5 border-b border-surface-container-high">
+          <span class="text-outline uppercase font-semibold">Cliente:</span>
+          <span id="ticket-client" class="text-on-surface font-bold text-sm">Carlos Martínez</span>
+        </div>
+
+        <div class="flex justify-between items-center pb-2.5 border-b border-surface-container-high">
+          <span class="text-outline uppercase font-semibold">Tanda de Salida:</span>
+          <span id="ticket-time" class="text-primary-container font-bold text-sm flex items-center gap-1">
+            <span class="material-symbols-outlined text-[16px]">schedule</span>
+            <span id="ticket-time-val">Hoy a las 13:45 h</span>
+          </span>
+        </div>
+
+        <div class="flex justify-between items-start pb-2.5 border-b border-surface-container-high">
+          <span class="text-outline uppercase font-semibold">Platos:</span>
+          <span id="ticket-dishes" class="text-on-surface text-right font-medium max-w-[240px]">1 Pollo Entero</span>
+        </div>
+
+        <div class="flex justify-between items-center pt-1">
+          <span class="text-sm uppercase font-bold text-on-surface">Total a pagar en mostrador:</span>
+          <span id="ticket-total" class="font-serif text-xl font-bold text-secondary">15,50 €</span>
+        </div>
+
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="mt-6 flex flex-col gap-3">
+        <a id="ticket-whatsapp-btn" href="#" target="_blank" rel="noopener" class="w-full py-3.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-colors shadow-lg">
+          <span class="material-symbols-outlined text-[20px]">chat</span>
+          <span>Enviar confirmación a mi WhatsApp</span>
+        </a>
+
+        <div class="flex items-center gap-2">
+          <a href="https://maps.google.com" target="_blank" rel="noopener" class="w-1/2 py-2.5 rounded-lg bg-surface-container hover:bg-surface-bright text-on-surface font-semibold text-xs uppercase tracking-wider flex items-center justify-center gap-1.5 transition-colors border border-surface-container-high">
+            <span class="material-symbols-outlined text-[16px]">directions</span>
+            <span>Ver Mapa Obrador</span>
+          </a>
+          <button onclick="closeModal()" class="w-1/2 py-2.5 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-semibold text-xs uppercase tracking-wider transition-colors border border-surface-container-highest">
+            Listo, entendido
+          </button>
+        </div>
+      </div>
+
+      <p class="text-[10px] text-center text-outline mt-4">
+        Presenta este código al llegar al mostrador de despacho rápido sin hacer fila.
+      </p>
+
+    </div>
+  </div>
+
+
+  <!-- ========================================================================= -->
+  <!-- 13. JAVASCRIPT DE INTERACTIVIDAD & CÁLCULO DE PEDIDOS EN TIEMPO REAL      -->
+  <!-- ========================================================================= -->
+  <script>
+    // State of the current selection
+    const state = {
+      basePrice: 15.50,
+      baseChickenName: "1 Pollo al Ast Ahumado (Entero)",
+      cuttingPreference: "Sin cortar",
+      extras: [],
+      currentTotal: 15.50,
+      orderCode: ""
+    };
+
+    // Prices of optional sides
+    const sidePrices = {
+      pierogi: { name: "Pierogi Ruskie Caseros (6 uds)", price: 6.90 },
+      mizeria: { name: "Ensalada Mizeria Tradicional", price: 4.50 },
+      patatas: { name: "Patatas Asadas al Romero", price: 4.90 },
+      bigos: { name: "Bigos del Cazador", price: 7.50 }
+    };
+
+    // Handle Quick Add from cards in the menu
+    function quickAdd(dishName, price) {
+      // Check if it's a chicken or side
+      if (dishName.includes("Pollo") || dishName.includes("Costillar")) {
+        state.basePrice = price;
+        state.baseChickenName = dishName;
+        // update selection UI visually
+        uncheckRadios();
+      } else {
+        // Toggle side if it matches
+        if (dishName.includes("Pierogi")) {
+          const chk = document.getElementById("extra-pierogi");
+          if (chk) chk.checked = true;
+        } else if (dishName.includes("Mizeria")) {
+          const chk = document.getElementById("extra-mizeria");
+          if (chk) chk.checked = true;
+        } else if (dishName.includes("Patatas")) {
+          const chk = document.getElementById("extra-patatas");
+          if (chk) chk.checked = true;
+        } else if (dishName.includes("Bigos")) {
+          const chk = document.getElementById("extra-bigos");
+          if (chk) chk.checked = true;
+        }
+      }
+
+      recalculateTotal();
+
+      // Smooth scroll to the order form
+      const target = document.getElementById("hacer-pedido");
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+
+      // Show temporary flash on form total
+      flashTotalDisplay();
+    }
+
+    // Select Chicken Option from Step 2
+    function selectChickenOption(labelElement, type, price) {
+      if (type === 'entero') {
+        state.basePrice = 15.50;
+        state.baseChickenName = "1 Pollo al Ast Ahumado (Entero)";
+      } else if (type === 'medio') {
+        state.basePrice = 8.90;
+        state.baseChickenName = "Medio Pollo al Ast Ahumado";
+      } else if (type === 'banquete') {
+        state.basePrice = 28.90;
+        state.baseChickenName = "Menú Banquete Festín (Pollo + Pierogis + Patatas)";
+      }
+
+      // Visual border highlight on labels
+      const labels = document.querySelectorAll('#chicken-options label');
+      labels.forEach(l => {
+        l.classList.remove('border-primary-container', 'border-secondary', 'border-primary-container/80');
+        l.classList.add('border-surface-container-high');
+        const indicator = l.querySelector('span:last-child');
+        if (indicator) {
+          indicator.className = "w-3 h-3 rounded-full bg-surface-container-high absolute top-4 right-4";
+        }
+      });
+
+      if (labelElement) {
+        labelElement.classList.remove('border-surface-container-high');
+        labelElement.classList.add('border-primary-container');
+        const activeIndicator = labelElement.querySelector('span:last-child');
+        if (activeIndicator) {
+          activeIndicator.className = "w-3 h-3 rounded-full bg-primary-container absolute top-4 right-4 ring-4 ring-primary-container/20";
+        }
+      }
+
+      recalculateTotal();
+    }
+
+    function uncheckRadios() {
+      const inputs = document.querySelectorAll('input[name="chicken_choice"]');
+      inputs.forEach(i => i.checked = false);
+    }
+
+    // Recalculate total in real-time
+    function recalculateTotal() {
+      let total = state.basePrice;
+      const selectedSides = [];
+
+      const chkPierogi = document.getElementById("extra-pierogi");
+      if (chkPierogi && chkPierogi.checked) {
+        total += sidePrices.pierogi.price;
+        selectedSides.push(sidePrices.pierogi.name);
+      }
+
+      const chkMizeria = document.getElementById("extra-mizeria");
+      if (chkMizeria && chkMizeria.checked) {
+        total += sidePrices.mizeria.price;
+        selectedSides.push(sidePrices.mizeria.name);
+      }
+
+      const chkPatatas = document.getElementById("extra-patatas");
+      if (chkPatatas && chkPatatas.checked) {
+        total += sidePrices.patatas.price;
+        selectedSides.push(sidePrices.patatas.name);
+      }
+
+      const chkBigos = document.getElementById("extra-bigos");
+      if (chkBigos && chkBigos.checked) {
+        total += sidePrices.bigos.price;
+        selectedSides.push(sidePrices.bigos.name);
+      }
+
+      state.currentTotal = total;
+      state.extras = selectedSides;
+
+      // Update Order Display
+      const totalDisplay = document.getElementById("order-total-display");
+      if (totalDisplay) {
+        totalDisplay.innerText = total.toFixed(2).replace('.', ',') + " €";
+      }
+
+      // Update text summary
+      const timeSelect = document.getElementById("form-time");
+      const selectedTime = timeSelect ? timeSelect.value : "13:45";
+      
+      const summaryText = document.getElementById("order-summary-text");
+      if (summaryText) {
+        let text = `${state.baseChickenName} · Tanda ${selectedTime} h`;
+        if (selectedSides.length > 0) {
+          text += ` + ${selectedSides.length} guarnición(es): ${selectedSides.join(', ')}`;
+        }
+        summaryText.innerText = text;
+      }
+    }
+
+    function flashTotalDisplay() {
+      const display = document.getElementById("order-total-display");
+      if (display) {
+        display.classList.add("scale-110", "text-primary-container");
+        setTimeout(() => {
+          display.classList.remove("scale-110", "text-primary-container");
+        }, 300);
+      }
+    }
+
+    function updateTandaNotice() {
+      recalculateTotal();
+      const timeSelect = document.getElementById("form-time");
+      const headerBadge = document.getElementById("header-tanda-badge");
+      if (timeSelect && headerBadge) {
+        headerBadge.innerText = `${timeSelect.value} h (Reservable)`;
+      }
+    }
+
+    // Category Filter for Menu
+    function filterMenu(category) {
+      const items = document.querySelectorAll('.menu-item');
+      const buttons = document.querySelectorAll('.menu-filter-btn');
+
+      buttons.forEach(btn => {
+        if (btn.getAttribute('data-category') === category) {
+          btn.className = "menu-filter-btn px-4 py-2 rounded-lg bg-primary-container text-white transition-all";
+        } else {
+          btn.className = "menu-filter-btn px-4 py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-all";
+        }
+      });
+
+      items.forEach(item => {
+        if (category === 'all' || item.getAttribute('data-category') === category) {
+          item.style.display = "flex";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    }
+
+    // Form Submission & Ticket Generation
+    function handleOrderSubmit(event) {
+      event.preventDefault();
+
+      const name = document.getElementById("client-name").value.trim() || "Cliente";
+      const phone = document.getElementById("client-phone").value.trim() || "No especificado";
+      const daySelect = document.getElementById("form-day");
+      const dayText = daySelect ? daySelect.options[daySelect.selectedIndex].text : "Hoy";
+      const timeSelect = document.getElementById("form-time");
+      const timeText = timeSelect ? timeSelect.value : "13:45";
+
+      // Cutting preference
+      const cuttingRadio = document.querySelector('input[name="cutting_pref"]:checked');
+      const cuttingText = cuttingRadio && cuttingRadio.value === "cortado" ? "Troceado en raciones" : "Sin cortar (Pieza entera con jugos)";
+
+      // Generate random ticket code
+      const randomNum = Math.floor(1000 + Math.random() * 9000);
+      state.orderCode = `#SC-${randomNum}`;
+
+      // Populate Modal Fields
+      document.getElementById("ticket-code").innerText = state.orderCode;
+      document.getElementById("ticket-client").innerText = `${name} (${phone})`;
+      document.getElementById("ticket-time-val").innerText = `${dayText.split(' ')[0]} a las ${timeText} h`;
+      
+      let dishesDetail = `${state.baseChickenName} [${cuttingText}]`;
+      if (state.extras.length > 0) {
+        dishesDetail += ` + ${state.extras.join(" + ")}`;
+      }
+      document.getElementById("ticket-dishes").innerText = dishesDetail;
+      document.getElementById("ticket-total").innerText = state.currentTotal.toFixed(2).replace('.', ',') + " €";
+
+      // Build WhatsApp message
+      const waMsg = encodeURIComponent(
+        `¡Hola SMOKED CHICKEN! He realizado mi pedido para recoger.\n\n` +
+        `*Código:* ${state.orderCode}\n` +
+        `*Nombre:* ${name}\n` +
+        `*Tanda:* ${dayText.split(' ')[0]} a las ${timeText} h\n` +
+        `*Pedido:* ${dishesDetail}\n` +
+        `*Total a pagar:* ${state.currentTotal.toFixed(2).replace('.', ',')} €\n\n` +
+        `¡Nos vemos en el obrador para recogerlo recién salido del horno!`
+      );
+      document.getElementById("ticket-whatsapp-btn").href = `https://wa.me/34612345678?text=${waMsg}`;
+
+      // Show Modal
+      document.getElementById("order-modal").classList.remove("hidden");
+    }
+
+    function closeModal() {
+      document.getElementById("order-modal").classList.add("hidden");
+    }
+
+    // Initialize on load
+    document.addEventListener("DOMContentLoaded", () => {
+      recalculateTotal();
+    });
+  </script>
+
+</body>
+</html>
